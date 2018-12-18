@@ -29,4 +29,6 @@ If something is not clear, please ask 🙂.
 
 In order to install the app you need to run : `$ bin/setup`
 
+A Demo user is created with the following credentials: `email: 'test1@test.com', password: 'password1'`
+
 If you have problems during the setup of the application feel free to contact us on our hiring platform workable.

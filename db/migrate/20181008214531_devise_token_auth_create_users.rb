@@ -1,6 +1,12 @@
 class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[5.2]
+  # workaround for https://github.com/lynndylanhurley/devise_token_auth/issues/1079
+  class User < ApplicationRecord
+    def tokens_has_json_column_type?
+      false
+    end
+  end
+
   def change
-    
     create_table(:users) do |t|
       ## Required
       t.string :provider, :null => false, :default => "email"
