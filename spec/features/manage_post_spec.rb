@@ -74,9 +74,9 @@ feature 'User deletes post' do
  end	
 end
 
-feature 'User manages comment for post' do
+feature 'User adds comment for post' do
   let(:comment) { create(:comment) }
-  scenario 'creates comment' do
+  scenario 'with valid data' do
     visit(new_user_session_path)
     login(comment.post.user);
     title=comment.post.title
@@ -91,6 +91,4 @@ feature 'User manages comment for post' do
     body=comment.body
     expect(commentElem).to have_content(body)
  end
- 
-
 end
