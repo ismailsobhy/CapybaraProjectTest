@@ -11,12 +11,9 @@ feature 'User create post' do
 	find(:xpath, "//div[@id='cke_1_contents']/textarea").set(post.description)
   find(:xpath, "//input[@name='commit']").click()
   expect(page).to have_content('Post was successfully created.')
-  
- end	
+  end	
 end
-
   
-
 feature 'User edit post' do
   let(:post) { create(:post) }
   scenario 'with valid data using edit link' do
@@ -33,8 +30,9 @@ feature 'User edit post' do
 
   expect(page).to have_content('Post was successfully updated.')
   
- end	
- scenario 'with valid data using edit button next to search result' do
+  end	
+ 
+  scenario 'with valid data using edit button next to search result' do
   visit(new_user_session_path)
   login(post.user);
   title=post.title
@@ -53,9 +51,8 @@ feature 'User edit post' do
 
   expect(page).to have_content('Post was successfully updated.')
 	  
-end	
+  end	
 end
-
 
 feature 'User deletes post' do
   let(:post) { create(:post) }
