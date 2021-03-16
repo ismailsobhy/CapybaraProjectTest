@@ -70,3 +70,20 @@ RSpec.configure do |config|
   config.include Warden::Test::Helpers
   config.include ControllerHelpers, type: :controller
 end
+
+def login(user)
+  fill_in('Email', with: user.email)
+  fill_in('Password', with: '12345678')
+  click_on('Log in')
+  expect(page).to have_content('Signed in successfully.')
+end
+
+def login(user)
+  fill_in('Email', with: user.email)
+  fill_in('Password', with: '12345678')
+  click_on('Log in')
+  expect(page).to have_content('Signed in successfully.')
+end
+
+
+Capybara.default_driver = :selenium_chrome

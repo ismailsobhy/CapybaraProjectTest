@@ -41,7 +41,7 @@ gem 'omniauth'
 gem 'simple_form'
 gem 'active_model_serializers'
 gem 'rack-cors'
-gem 'ckeditor'
+gem "ckeditor", '4.0.6'
 gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 gem 'faker'
@@ -71,7 +71,7 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  gem 'chromedriver-helper', '1.2.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
