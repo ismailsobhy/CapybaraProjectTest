@@ -2,8 +2,9 @@
 
 **Use Case:**  User logs in
 **Actor:** User  
-**Description:** This use case describes how a user logs into blogging system
-**Precondition:** none
+**Description:** This use case describes how a user logs into blogging system.
+
+**Precondition:** none.
 1. The system requires from the users to type their usernames and passwords.
 2. The user enters his/her username and password.
 3. The system validates the entered username and password and logs the actor into the
@@ -14,7 +15,8 @@ __Postcondition:__ If login is successful, a success message will be displayed.
 
 **Use Case:**  User creates post
 **Actor:** User  
-**Description:** This use case describes new post creation
+**Description:** This use case describes new post creation.
+
 **Precondition:** The user is logged in
 1. The user creates new post.
 2. The user fills post title and post.
@@ -24,6 +26,7 @@ __Postcondition:__ The post is created and found in post list and success messag
 
 **Use Case:**   User edits post
 **Actor:** User  
+
 **Description:** This use case describes user editing post
 **Precondition:** The user is logged in
 1. The user searches for a post.
@@ -37,6 +40,7 @@ __Postcondition:__ The post edits are reflected in the post and success message 
 **Use Case:**  User deletes post
 **Actor:** User  
 **Description:** This use case describes user removing a post
+
 **Precondition:** The user is logged in
 1. The user searches for a post.
 2. The user clicks on delete.
@@ -48,6 +52,7 @@ __Postcondition:__ The post is deleted and success message for post delete is di
 **Actor:** User  
 **Description:** This use case describes adding a comment for a post
 **Precondition:** The user is logged in
+
 1. The user searches for a post.
 2. The user fills a comment.
 3. The user submits the comment.
