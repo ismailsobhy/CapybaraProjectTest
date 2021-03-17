@@ -29,7 +29,8 @@ Provided Features files:
     * Scenario for invalid credentials
 2. spec\features\manage_post_spec.rb
     * Scenario for creating post.
-    * 2 different scenarios editing post (Edit links and clicking on the post).
+    * Scenario for editing post using edit link to edit description.
+    * Scenario for editing post by clicking on it to edit title.
     * Scenario for deleting post.
     * Scenario for adding comment.
 
