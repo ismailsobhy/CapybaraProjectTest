@@ -1,10 +1,10 @@
-#Testing Insructions 
+# Testing Insructions 
 
 These instructions and comments are a continuation for README.md
 
-It is important to mention that the Ruby version used was 2.4. Gemfile was edited so that the version for chromedriver-helper 1.2. Other Ruby version presented error in installation.
+It is important to mention that the **Ruby** version used was **2.4**. Gemfile was edited so that the version for **chromedriver-helper 1.2**. Other Ruby versions presented errors in installation.
 
-postgres (PostgreSQL) 13.2 was used.
+**postgres (PostgreSQL) 13.2** was used.
 
 Be sure to update database.yml with your the username and password that you set for the db as:
 ```
@@ -19,8 +19,9 @@ default: &default
 ```
 
 In the rails_helper.rb, the default driver was updated to:
+```
 Capybara.default_driver = :selenium_chrome
-
+```
 Provided Features files:
 1. spec\features\user_sign_in_spec.rb
     * Scenario for sign in (already existed).
