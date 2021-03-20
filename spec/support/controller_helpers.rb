@@ -10,3 +10,11 @@ module ControllerHelpers
     end
   end
 end
+
+def login(user)
+  fill_in('Email', with: user.email)
+  fill_in('Password', with: '12345678')
+  click_on('Log in')
+  expect(page).to have_content('Signed in successfully.')
+end
+
