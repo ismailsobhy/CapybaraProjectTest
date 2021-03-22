@@ -6,8 +6,6 @@ feature 'User signs in' do
   scenario 'with valid credentials' do
     visit(new_user_session_path)
     login(user);
-  
-    
   end
 
   scenario 'with invalid credentials' do
