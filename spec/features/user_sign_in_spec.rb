@@ -6,6 +6,8 @@ feature 'User signs in' do
   scenario 'with valid credentials' do
     visit(new_user_session_path)
     login(user);
+    expect(page).to have_content('Signed in successfully.')
+
   end
 
   scenario 'with invalid credentials' do
