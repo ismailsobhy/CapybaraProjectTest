@@ -25,5 +25,16 @@ feature 'User create post' do
 
   expect(page).to have_selector(:xpath, "//div[@class='container']//p", :text => post.description)
 
-  end	
+  end
+  scenario 'with invalid data (empty)' do
+    visit(new_user_session_path)
+    login(post.user);
+    click_on('Create New Post')
+    expect(page).to have_field("post_title")
+  
+    
+    click_on('Create');
+  
+    expect(page).to have_content('Creation failed! Title can\'t be blank, Description can\'t be blank')
+    end	
 end

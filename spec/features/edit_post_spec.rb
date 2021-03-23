@@ -23,7 +23,7 @@ feature 'User edit post' do
     expect(page).to have_content(updatedDescription)
     
     end	
-    scenario 'with invalid data' do
+    scenario 'with invalid data (empty)' do
         visit(new_user_session_path)
         login(post.user);
         fill_in('search_query', with: post.description)
