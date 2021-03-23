@@ -5,8 +5,6 @@ feature 'User edit post' do
     scenario 'with valid data using edit link to edit description' do
     visit(new_user_session_path)
     login(post.user);
-    fill_in('search_query', with: post.description)
-    click_on("Search")
     
     click_on('(edit)')
     expect(page).to have_field("post_title")
@@ -26,8 +24,6 @@ feature 'User edit post' do
     scenario 'with invalid data (empty)' do
         visit(new_user_session_path)
         login(post.user);
-        fill_in('search_query', with: post.description)
-        click_on("Search")
         click_on('(edit)')
         expect(page).to have_field("post_title")
         
@@ -46,9 +42,7 @@ feature 'User edit post' do
         visit(new_user_session_path)
         login(post.user);
         title=post.title
-        fill_in('search_query', with: post.description)
-        click_on("Search")
-    
+       
         click_link(post.title);    
 
         find(:xpath,"(//a[text()='Edit' and contains(@class,'btn-primary')])[1]").click();
