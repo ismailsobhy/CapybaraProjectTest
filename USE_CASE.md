@@ -15,7 +15,7 @@
 | Actor | User |
 | Description | This use case describes how a user sign up into blogging system. |
 |Precondition|User should not be logged on and not existing.|
-|Steps|<ol><li>The user goes to registration form</li><li>The user fills registration form with email, password , and password cofirmation</li></ol>|
+|Steps|<ol><li>The user goes to registration form</li><li>The user fills registration form with email, password , and password cobfirmation</li></ol>|
 |Alternative Flows|If in the Basic Flow the user  enters an invalid input (existing email, empty fields, short password), the system displays an error message.|
 |Postcondition|If signup is successful, a success message will be displayed.|
 
@@ -26,7 +26,7 @@
 | Description | This use case describes user logging out |
 |Precondition|The user is logged in.|
 |Steps|<ol><li>The user can logout at anytime .</li></ol>|
-|Postcondition|The login page will be displayed and user willbe requested to login.|
+|Postcondition|The login page will be displayed and user will be requested to login.|
 
 
 
@@ -74,7 +74,7 @@
 | Description | This use case describes when user is searching for a post |
 |Precondition|The user is logged in.|
 |Steps|<ol><li>The user searches in his/her posts for a post using post description.</li><li>The user find the post.</li></ol>|
-|Alternative Flows|If in the Basic Flow the user enters description that post do not have, there will be no results.|
+|Alternative Flows|If in the Basic Flow the user enters description that does not exist in the posts, there will be no results.|
 |Postcondition|The comment dissapears and the number of comments decrease by 1.|
 
 
@@ -103,5 +103,5 @@
 | Actor | User |
 | Description | This use case describes user sign out from system. |
 |Precondition|The user is logged in.|
-|Steps|<ol><li>The user can view his/her posts only</li></ol>|
+|Steps|<ol><li>The user can view his/her posts only and not the posts of other users.</li></ol>|
 |Postcondition|none.|

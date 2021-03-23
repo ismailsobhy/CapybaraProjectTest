@@ -2,7 +2,7 @@
 
 These instructions and comments are a continuation for README.md
 
-It is important to mention that the **Ruby** version used was **2.4**. Gemfile was edited so that the version for **chromedriver-helper** is **1.2**. Other Ruby versions presented errors in installation.
+It is important to mention that the **Ruby** version used was **2.5.1**. Gemfile was edited so that webdrivers is used.
 
 **postgres (PostgreSQL) 13.2** was used.
 
