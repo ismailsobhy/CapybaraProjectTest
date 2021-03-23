@@ -40,6 +40,6 @@ bundle exec rspec spec/features/
 ```
 And provide you with 8 examples as below which equal to the number of scenarios.
 ```
-Finished in 34.82 seconds (files took 3.94 seconds to load)
-8 examples, 0 failures
+Finished in 1 minute 2.36 seconds (files took 7.93 seconds to load)
+18 examples, 0 failures
 ```
