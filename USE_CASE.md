@@ -1,6 +1,6 @@
 # Use Cases
 
-| Usercase | User signs in |
+| Usercase (1) | User signs in |
 | ----------- | ----------- |
 | Actor | User |
 | Description | This use case describes how a user logs into blogging system. |
@@ -10,7 +10,7 @@
 |Postcondition|If login is successful, a success message will be displayed.|
 
 
-| Usercase | User signs up |
+| Usercase (2) | User signs up |
 | ----------- | ----------- |
 | Actor | User |
 | Description | This use case describes how a user sign up into blogging system. |
@@ -20,7 +20,7 @@
 |Postcondition|If signup is successful, a success message will be displayed.|
 
 
-| Usercase | User signs out |
+| Usercase (3)| User signs out |
 | ----------- | ----------- |
 | Actor | User |
 | Description | This use case describes user logging out |
@@ -30,7 +30,7 @@
 
 
 
-| Usercase | User edits profile |
+| Usercase (4)| User edits profile |
 | ----------- | ----------- |
 | Actor | User |
 | Description | This use case describes user editing profile |
@@ -41,7 +41,7 @@
 
 
 
-| Usercase | User creates post |
+| Usercase (5)| User creates post |
 | ----------- | ----------- |
 | Actor | User |
 | Description | This use case describes new post creation. |
@@ -50,7 +50,7 @@
 |Postcondition|The post is created and found in post list and success message for post creation is displayed.|
 
 
-| Usercase | User edits post |
+| Usercase (6)| User edits post |
 | ----------- | ----------- |
 | Actor | User |
 | Description | This use case describes user editing post. |
@@ -59,7 +59,7 @@
 |Postcondition|The post edits are reflected in the post and success message for post update is displayed.|
 
 
-| Usercase | User deletes post |
+| Usercase (7)| User deletes post |
 | ----------- | ----------- |
 | Actor | User |
 | Description | This use case describes user removing a post. |
@@ -68,7 +68,7 @@
 |Postcondition|The post is deleted and success message for post delete is displayed.|
 
 
-| Usercase | User searches for post |
+| Usercase (8)| User searches for post |
 | ----------- | ----------- |
 | Actor | User |
 | Description | This use case describes when user is searching for a post |
@@ -79,7 +79,7 @@
 
 
 
-| Usercase | User adds comment to post |
+| Usercase (9)| User adds comment to post |
 | ----------- | ----------- |
 | Actor | User |
 | Description | This use case describes adding a comment for a post |
@@ -88,7 +88,7 @@
 |Postcondition|The comment is appearing under the post and number of comments increase by 1.|
 
 
-| Usercase | User deletes comment from a post |
+| Usercase (10)| User deletes comment from a post |
 | ----------- | ----------- |
 | Actor | User |
 | Description | This use case describes deleting a comment for a post |
@@ -98,7 +98,7 @@
 
 
 
-| Usercase | User's post only are displayed |
+| Usercase (11)| User's post only are displayed |
 | ----------- | ----------- |
 | Actor | User |
 | Description | This use case describes user sign out from system. |
