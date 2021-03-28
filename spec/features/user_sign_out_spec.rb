@@ -1,4 +1,3 @@
-require 'rails_helper'
 
 feature 'User signs out' do
     let(:user) { create(:user) }
@@ -8,6 +7,6 @@ feature 'User signs out' do
       click_link('Logout')
     
       expect(page).to have_content('You need to sign in or sign up before continuing.')
-      expect(page).to have_current_path("/users/sign_in")
+      expect(page).to have_current_path(new_user_session_path)
     end
 end

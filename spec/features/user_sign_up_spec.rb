@@ -1,4 +1,3 @@
-require 'rails_helper'
 
 feature 'User signs up' do
   let(:user) { create(:user) }
@@ -40,7 +39,7 @@ feature 'User signs up' do
     
     expect(page).to have_content('Password confirmation doesn\'t match Password')
   end
-  scenario 'with non matching passwords' do
+  scenario 'with blank creds' do
 
     visit(new_user_session_path)
     click_on('Registration')
@@ -50,7 +49,7 @@ feature 'User signs up' do
     expect(page).to have_content('Password can\'t be blank')
     expect(page).to have_content('Email can\'t be blank')
   end
-  scenario 'with non shor password' do
+  scenario 'with short password' do
 
     visit(new_user_session_path)
     click_on('Registration')

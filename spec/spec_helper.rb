@@ -94,3 +94,7 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+
+require 'rails_helper'
+require './spec/support/controller_helpers'

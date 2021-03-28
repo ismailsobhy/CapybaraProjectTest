@@ -1,4 +1,3 @@
-require 'rails_helper'
 
 feature 'User deletes post' do
     let(:post) { create(:post) }
@@ -15,7 +14,8 @@ feature 'User deletes post' do
       end
      
       expect(page).to have_content('Post deleted successfully.')
-      expect(page).to have_current_path("/posts")
+      
+      expect(page).to have_current_path(posts_path)
     
    end	
   end

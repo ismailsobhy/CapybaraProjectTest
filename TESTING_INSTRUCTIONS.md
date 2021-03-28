@@ -22,17 +22,18 @@ In the rails_helper.rb, the default driver was updated to:
 ```
 Capybara.default_driver = :selenium_chrome
 ```
-Provided Features files:
-1. spec\features\user_sign_in_spec.rb
-    * Scenario for sign in (already existed).
-    * Scenario for sign out.
-    * Scenario for invalid credentials
-2. spec\features\manage_post_spec.rb
-    * Scenario for creating post.
-    * Scenario for editing post using edit link to edit description.
-    * Scenario for editing post by clicking on it to edit title.
-    * Scenario for deleting post.
-    * Scenario for adding comment.
+Provided Features files (spec\features\):
+* user_sign_in_spec.rb
+* user_sign_up_spec.rb
+* user_edit_profile_spec.rb
+* create_post_spec.rb
+* edit_post_spec.rb
+* delete_post_spec.rb
+* search_post_spec.rb
+* create_comment_spec.rb
+* delete_comment_spec.rb
+* user_sign_out_spec.rb
+* verify_user_posts.rb
 
 You can run on the cases in the features mentioned above by running:
 ```
@@ -40,6 +41,6 @@ bundle exec rspec spec/features/
 ```
 And provide you with 8 examples as below which equal to the number of scenarios.
 ```
-Finished in 1 minute 2.36 seconds (files took 7.93 seconds to load)
-20 examples, 0 failures
+Finished in 1 minute 0.77 seconds (files took 5.1 seconds to load)
+21 examples, 0 failures
 ```

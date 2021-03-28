@@ -1,5 +1,3 @@
-require 'rails_helper'
-require './spec/support/controller_helpers'
 
 feature 'User signs in' do
   let(:user) { create(:user) }
@@ -17,14 +15,16 @@ feature 'User signs in' do
     click_on('Log in')
 
     expect(page).to have_content('Invalid Email or password.')
-    expect(page).to have_current_path("/users/sign_in")
+    expect(page).to have_current_path(new_user_session_path)
   end
   scenario 'with invalid (empty) credentials' do
     visit(new_user_session_path)
       click_on('Log in')
   
       expect(page).to have_content('Invalid Email or password.')
-      expect(page).to have_current_path("/users/sign_in")
+      expect(page).to have_current_path(new_user_session_path)
+
+   
     end
     
 end

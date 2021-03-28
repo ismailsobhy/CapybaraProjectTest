@@ -1,8 +1,7 @@
-require 'rails_helper'
 
-feature 'User delete comment for post' do
+feature 'User delete comment' do
     let(:comment) { create(:comment) }
-    scenario '' do
+    scenario 'for existing post' do
       visit(new_user_session_path)
       login(comment.post.user);
 
@@ -13,8 +12,8 @@ feature 'User delete comment for post' do
       
       accept_confirm do
          find(:xpath, "(//section[contains(@class,'comments')]//a[contains(text(),'Delete')])[1]").click()
-      end
-     
+       end
+   
       expect(page).to have_content("#{num} Comments")
       
    end

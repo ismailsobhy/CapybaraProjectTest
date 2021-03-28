@@ -1,5 +1,4 @@
-require 'rails_helper'
-require './spec/support/controller_helpers'
+
 feature 'User edit profie' do
   let(:user) { create(:user) }
   scenario 'with valid data' do

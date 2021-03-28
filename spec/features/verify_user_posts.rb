@@ -1,5 +1,3 @@
-require 'rails_helper'
-require './spec/support/controller_helpers'
 
 feature 'User open post' do
   let(:post) { create(:post) }
