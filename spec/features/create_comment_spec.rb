@@ -1,8 +1,8 @@
 
-feature 'User trys to add comment for post' do
-   let!(:user) { create(:user) }
-   let!(:post) { create(:post, user: user) }
- 
+feature 'User tries to add comment for post' do
+   let(:user) { create(:user) }
+   let!(:post) { create(:post, user: user) } 
+
     scenario 'with valid data' do
       visit(new_user_session_path)
       login(user);

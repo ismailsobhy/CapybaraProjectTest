@@ -1,7 +1,7 @@
 
 feature 'User edit post' do
 
-    let!(:user) { create(:user) }
+    let(:user) { create(:user) }
     let!(:post) { create(:post, user: user) }
 
 
@@ -10,7 +10,6 @@ feature 'User edit post' do
     login(user);
  
     click_on('(edit)')
-    expect(page).to have_field("post_title")
         
     updatedDescription="Updated Post Description";
 
@@ -50,8 +49,8 @@ feature 'User edit post' do
        
         click_link(post.title);    
 
-        find(:xpath,"(//a[text()='Edit' and contains(@class,'btn-primary')])[1]").click();
-   
+        click_link('Edit');    
+        
         expect(page).to have_content(post.title)
         fill_in('post_title', with: "Updated Post Title")
 

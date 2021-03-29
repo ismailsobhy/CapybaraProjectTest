@@ -16,10 +16,9 @@ feature 'User search post' do
         visit(new_user_session_path)
         login(post.user);
 
-        o = [('a'..'z'), ('A'..'Z')].map(&:to_a).flatten
-        randomDescription = (0...50).map { o[rand(o.length)] }.join
+        newDesc = "qwertyuiop"
 
-        fill_in('search_query', with: randomDescription)
+        fill_in('search_query', with: newDesc)
         click_on("Search")
         expect(page).to have_content("No posts found")
     end

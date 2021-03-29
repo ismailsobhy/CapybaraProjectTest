@@ -15,6 +15,18 @@ def login(user)
   fill_in('Email', with: user.email)
   fill_in('Password', with: '12345678')
   click_on('Log in')
-  expect(page).to have_content('Signed in successfully.')
 end
 
+def createPost(post)
+  click_on('Create New Post')
+  
+  fill_in('post_title', with: post.title)
+  
+  page.within_frame(:css,"iframe") do
+    find("body").send_keys(post.description)
+  end
+
+
+  click_on('Create');
+
+end

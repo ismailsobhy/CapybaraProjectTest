@@ -1,6 +1,7 @@
 
 feature 'User deletes post' do
-    let(:post) { create(:post) }
+  let(:user) { create(:user) }
+  let!(:post) { create(:post, user: user) }
     scenario 'using search and click on button' do
       visit(new_user_session_path)
       login(post.user);
