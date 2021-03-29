@@ -44,3 +44,8 @@ And provide you with 8 examples as below which equal to the number of scenarios.
 Finished in 1 minute 0.77 seconds (files took 5.1 seconds to load)
 22 examples, 0 failures
 ```
+
+If you want to generate a report
+```
+bundle exec rspec spec/features/ --format html --out rspec_results.html
+```
