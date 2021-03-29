@@ -4,7 +4,7 @@ feature 'User deletes post' do
   let!(:post) { create(:post, user: user) }
     scenario 'using search and click on button' do
       visit(new_user_session_path)
-      login(post.user);
+      login(user);
       title=post.title
       fill_in('search_query', with: post.description)
    
